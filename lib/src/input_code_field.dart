@@ -467,4 +467,12 @@ class _InputCodeFieldState extends State<InputCodeField>
     control.removeListener(_notifyState);
     control.dispose();
   }
+
+  @override
+  AutofillScope get currentAutofillScope => throw UnimplementedError();
+
+  @override
+  void showAutocorrectionPromptRect(int start, int end) {
+
+  }
 }
